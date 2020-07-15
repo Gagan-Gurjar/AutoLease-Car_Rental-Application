@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(228, 228, 228, 0.397); 
+}
+
+#container {
+  margin: 0 10%;
+}
+
+        /* NAVBAR */
+
+
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    font-size: 18px;
+    
+}
+
+.nav .part-1 img {
+    height: 25px; 
+}
+
+.nav .part-2 li  {
+    display: inline;
+    padding: 0px 0px;
+    margin-left:50px;  
+
+  }
+  
+  .nav .part-2 li a {
+    text-decoration: none;
+    color: #000;
+    position: relative; 
+  }
+  
+  .nav .part-2 {
+    text-align: right;
+    
+  }
+  
+  .nav .part-2 li a::before {
+    content: "";
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: -5px;   
+    border-bottom: 2px solid#000;
+  }
+  
+  .nav .part-2 li:hover a::before {
+    right: 0;
+    left: 0;
+  }
+
+    /* CAROUSEL */
+
+.slideshow {
+  margin-top: 40px;
+  box-shadow: 1px 1px 5px 3px #000;
+  height: 550px;
+    
+    
+}
+.slideshow img {
+  width: 100%;
+  height: 550px;
+}
+
+
+.mind {
+  color: white;
+  font-size: 28px;
+  right: 5%;
+  margin-top: -200px;
+  text-align: right;
+  position: relative;
+}
+
+    /* CAR LIST  */
+
+#car-list {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.list-header {
+  font-size: 28px;
+  margin: 40px auto;
+}
+
+.list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.list-container .car ul li {
+  list-style: none;
+}
+
+.list-container .car img {
+  height: 200px;
+}
+
+/* .car {
+  border: 2px solid red;
+}
+
+.car ul {
+  border: 2px solid pink;
+} */
+
+    /* ABOUT US  */
+
+#about-us {
+  margin: 0 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#about-us span {
+  font-size: 26px;
+}
+
+.about {
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+    /* FOOTER  */
+
+.footer {
+  text-align: center;
+  /* background-color: #c4c4c4; */
+  margin-bottom: 10px;
+  
+}
+
+.footer {
+  
+}
+
+.contact {
+  float: left;
+  width: 50%;
+}
+
+#contact-us ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+#contact-us {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+#contact-us span {
+  font-size: 26px;
+}
+
+#contact-us ul {
+  margin-top: 15px;
+}
+
+    /* COPY RIGHT  */
+
+.copy {
+  font-size: 17px;
+}

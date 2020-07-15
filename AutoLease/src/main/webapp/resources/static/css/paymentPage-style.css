@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(228, 228, 228, 0.397);
+}
+
+#container {
+    margin: 0 10%;
+}
+
+/* NAVBAR */
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.nav .part-1 img {
+    height: 25px;
+}
+
+.nav .part-2 li {
+    display: inline;
+    padding: 0px 0px;
+    margin-left: 50px;
+}
+
+.nav .part-2 li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.nav .part-2 {
+    text-align: right;
+}
+
+.nav .part-2 li a::before {
+    content: "";
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: -5px;
+    border-bottom: 2px solid#000;
+}
+
+.nav .part-2 li:hover a::before {
+    right: 0;
+    left: 0;
+}
+
+/* PAYMENT SECTION  */
+
+.payment-box {
+    margin: 15vh 25vw;
+    text-align: center;
+    font-size: 18px;
+    color: #2b2b2b;
+    box-shadow: 2px 2px 12px #000;
+}
+.header {
+    padding: 20px;
+    font-size: 22px;
+}
+
+.payment-mode {
+    padding: 10px;
+}
+.dropdown {
+    padding: 20px;
+}
+.submit-btn {
+    padding: 20px;
+    
+}
+.btn1 {
+    padding: 5px 40px;
+}
+
+/* FOOTER  */
+
+.footer {
+    text-align: center;
+    /* background-color: #c4c4c4; */
+    margin-bottom: 10px;
+}
+
+.contact {
+    float: left;
+    width: 50%;
+}
+
+#contact-us ul li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+#contact-us {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+#contact-us span {
+    font-size: 26px;
+}
+
+#contact-us ul {
+    margin-top: 15px;
+}
+
+/* COPY RIGHT  */
+
+.copy {
+    font-size: 17px;
+}
